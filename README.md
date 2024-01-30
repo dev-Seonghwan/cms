@@ -2,9 +2,7 @@
 
 판매자와 구매자를 중개해 주는 커머스 서버입니다.
 
-### 사용 기술
 
-Spring, JPA, Mysql, Redis, Docker, AWS
 
 ## 프로젝트 기능 및 설계
 
@@ -28,3 +26,7 @@ Spring, JPA, Mysql, Redis, Docker, AWS
   
 ## ERD 
 ![image](https://github.com/dev-Seonghwan/cms/assets/91909986/d28d6f45-8282-465c-89f7-62be62c004c2)
+
+## 사용 기술
+
+Spring, JPA, Mysql, Redis, Docker, AWS
