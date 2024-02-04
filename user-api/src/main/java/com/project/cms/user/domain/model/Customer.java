@@ -13,10 +13,12 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.hibernate.envers.AuditOverride;
 
 @Entity
 @Getter
+@Setter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
@@ -30,6 +32,7 @@ public class Customer extends BaseEntity {
 
     private String email;
     private String name;
+
     private String password;
     private String phone;
     private LocalDate birth;
@@ -38,7 +41,7 @@ public class Customer extends BaseEntity {
     private String verificationCode;
     private boolean verify;
 
-    public static Customer from(SignUpForm form){
+    public static Customer form(SignUpForm form){
         return Customer.builder()
             .email(form.getEmail().toLowerCase(Locale.ROOT))
             .password(form.getPassword())
