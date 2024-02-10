@@ -15,10 +15,22 @@ import org.springframework.web.bind.annotation.RestController;
 public class SignInController {
 
     private final SignInApplication signInApplication;
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
     @PostMapping("/customer")
     public ResponseEntity<String> signInCustomer(@RequestBody SignInForm form) {
 
         return ResponseEntity.ok(signInApplication.customerLoginToken(form));
     }
 
+<<<<<<< Updated upstream
+=======
+    @PostMapping("/seller")
+    public ResponseEntity<String> signInSeller(@RequestBody SignInForm form) {
+
+        return ResponseEntity.ok(signInApplication.sellerLoginToken(form));
+    }
+>>>>>>> Stashed changes
 }
