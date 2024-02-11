@@ -1,6 +1,6 @@
 package com.project.cms.user.config.filter;
 
-import com.project.cms.user.service.CustomerService;
+import com.project.cms.user.service.customer.CustomerService;
 import com.project.domain.config.JwtAuthenticationProvider;
 import com.project.domain.domain.common.UserVo;
 import jakarta.servlet.Filter;
