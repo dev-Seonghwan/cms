@@ -33,12 +33,12 @@ public class SignUpApplication {
             Customer c = signUpCustomerService.signUp(form);
 
             String code = getRandomCode();
-            SendMailForm sendMailForm = SendMailForm.builder()
-                .from("test@tester.com")
-                .to(form.getEmail())
-                .subject("Verification Email")
-                .text(getVerificationEmailBody(c.getEmail(), c.getName(),"customer", code))
-                .build();
+//            SendMailForm sendMailForm = SendMailForm.builder()
+//                .from("test@tester.com")
+//                .to(form.getEmail())
+//                .subject("Verification Email")
+//                .text(getVerificationEmailBody(c.getEmail(), c.getName(),"customer", code))
+//                .build();
 //            mailgunClient.sendEmail(sendMailForm);
             signUpCustomerService.changeCustomerValidateEmail(c.getId(), code);
             return "회원 가입에 성공하였습니다.";

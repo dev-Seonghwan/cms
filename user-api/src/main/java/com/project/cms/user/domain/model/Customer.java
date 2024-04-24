@@ -31,15 +31,14 @@ public class Customer extends BaseEntity {
     private Long id;
     @Column(unique = true)
     private String email;
-    private String name;
-
     private String password;
-    private String phone;
+    private String name;
     private LocalDate birth;
+    private String phone;
 
+    private boolean verify;
     private LocalDateTime verifyExpiredAt;
     private String verificationCode;
-    private boolean verify;
 
     @Column(columnDefinition = "int default 0")
     private Integer balance;

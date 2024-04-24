@@ -17,5 +17,4 @@ public class SignUpForm {
     private String name;
     private LocalDate birth;
     private String phone;
-
 }
